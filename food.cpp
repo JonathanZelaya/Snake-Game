@@ -1,7 +1,5 @@
 #include "food.h"
 
-//need to update the random food position
-//need to be implemented
 void Food::update(std::vector<Position> &body,int hx,int hy){
     int i;
     int flag = 0;
