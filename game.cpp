@@ -37,16 +37,9 @@ int Game::end()                  //exit game function
     system("stty echo icanon");     //restart cache
     pen.goto_xy(100,0);
     pen.show_cur();
-    
-	//TODO
-	//need to make cursor goto the bottom
-	//need to show cursor
 	
     exit(0);                        //exit
 }
-
-//TODO need to implement this function which will take a infinite loop to
-//set direction of snake head
 
 int Game::getKey(){
     
@@ -163,14 +156,6 @@ void Game::snakeMove(void){
             break;
                 
     }
-    
-	//TODO
-	//need to check if the head space is valid 
-	//if it is valid check if the space has food
-	//if it has food-->update food && update body
-	//make movement
-	//update head position
-	//use fkey(fault key) to check the wrong direction
 }
 
 void Game::start(){
@@ -245,13 +230,6 @@ void Game::handler(){
         usleep(speed);
        
     }
-	//TODO
-	//use a infinite loop
-	//draw the game box
-	//draw the food
-	//move the snake
-	//flush the cache
-	//use usleep(speed) to control speed
 }
 
 void Game::gameStart(){
